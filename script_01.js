@@ -105,13 +105,36 @@ hier: Aufsummierung
 
 /* Besser: mit FOR-Schleife */
 
-let a = 0; // Anfangswert
-for (let i = 0; i < 10; i++) {
-    output("in der loop:" + a);
-    a = a + 1;
-}
-output("nach der loop: " + a);
+// let a = 0; // Anfangswert
+// for (let i = 0; i < 10; i++) {
+//     output("in der loop:" + a);
+//     a = a + 1;
+// }
+// output("nach der loop: " + a);
 
+/*
+
+1a. Einer Variablen kann Ihr eigener Wert zugewiesen werden
+
+Solange die Variable existiert, bleibt dieser erhalten
+
+hier: Verkettung eines Strings // Transponierung
+
+*/
+
+
+
+let str = "";
+let gap = " ";
+let addStr = "Test";
+for (let i = 0; i <= 10; i++) {
+    output("in der loop: " + str);
+// a = a + 1;  // Numerik
+    str = str + addStr + gap // Text
+
+}
+
+output("nach der loop: " + str);
 
 //*** 01b. Funtionalität mit Array 2 *///
 // Transponnierung : untereinander ---> nebeneinander
