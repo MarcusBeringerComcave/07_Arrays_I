@@ -21,52 +21,71 @@
 // {}> Codeblöcke
 // []> Arrays, Index
 
+//* for -Schleifen als allg. Wiederholungs-Struktur
+// Inkrement (untere Grenze --> obere Grenze)
+// or (let i = 0; i < 4; i++)
+// {
+// output("index i:" + i);
+// }
+
+// // Dekrement (obere Grenze -->> untere Grenze)
+// for (let i = 10; i > 0; i--) {
+//     output("index i: " + i);
+// }
+
+// Inkrement (var. Schrittweite)
+
+// for (let i = 0; i <= 100; i+=10) {
+//     output("index i: " + i);
+// }
+
+
 /*** 01. Funktionalität mit Einzelparametern */
 // --> "Ich bin Max Mütze."
 //output(getSentence("Ich","bin","coole","Max","Mütze"));
 // output(getSentence("Ich","bin","der","coole","Max","Mütze"));
 // output(getSentence("Ich","bin","die","coole","Maxine","Mützerich"));
 // more of the same (DRY >>Dont repeat Yourself)<<<<
-function getSentence(word1,word2,word3,word4,word5,word6) {
-    const GAP   = " ";
-    const PUNCT = ".";
-    let str     =   word1 + GAP +
-                    word2 + GAP +
-                    word3 + GAP +
-                    word4 + GAP +
-                    word5 + GAP +
-                    word6 +
-                    PUNCT;
+// function getSentence(word1,word2,word3,word4,word5,word6) {
+//     const GAP   = " ";
+//     const PUNCT = ".";
+//     let str     =   word1 + GAP +
+//                     word2 + GAP +
+//                     word3 + GAP +
+//                     word4 + GAP +
+//                     word5 + GAP +
+//                     word6 +
+//                     PUNCT;
 
-    return str;
-}
+//     return str;
+// }
 
-//** 01a. Funktionalität mit Array 1** */
-// Kritik | Überlegung
-// word1,word2,...wordN :: Semantische Struktur
-// arr[0],etc.... arr[n] :: Numerische Struktur (0,1,2,3,4...n)
-// -->> Transformation semantsiches Problem -->> numerisches Problem
-output(getSentenceArr(["Ich","bin","coole","Max","Mütze"]))
-function getSentenceArr(arr) {
-    const GAP   = " ";
-    const PUNCT = ".";
-     let str     =  arr[0] + GAB +
-                    arr[1] + GAB +
-                    arr[2] + GAB +
-                    arr[3] + GAB +
-                    arr[4] + GAB +
-                    arr[5] + 
-                    punct;
+// //** 01a. Funktionalität mit Array 1** */
+// // Kritik | Überlegung
+// // word1,word2,...wordN :: Semantische Struktur
+// // arr[0],etc.... arr[n] :: Numerische Struktur (0,1,2,3,4...n)
+// // -->> Transformation semantsiches Problem -->> numerisches Problem
+// output(getSentenceArr(["Ich","bin","coole","Max","Mütze"]))
+// function getSentenceArr(arr) {
+//     const GAP   = " ";
+//     const PUNCT = ".";
+//      let str     =  arr[0] + GAB +
+//                     arr[1] + GAB +
+//                     arr[2] + GAB +
+//                     arr[3] + GAB +
+//                     arr[4] + GAB +
+//                     arr[5] + 
+//                     punct;
     
-    return str;
-}
+//     return str;
+// }
 
 
 
-// Modul: Ausgabe in Konsole : Test
-// output("hi"); 
-function output(outputStr) {
-    console.log(outputStr);
-}
+// // Modul: Ausgabe in Konsole : Test
+// // output("hi"); 
+// function output(outputStr) {
+//     console.log(outputStr);
+// }
 
 
